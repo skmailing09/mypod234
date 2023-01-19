@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Testimonial</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==========================css============================-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="img/favicon.ico" />
+    <!--==============Call Header & Footer===========================-->
+    <script src="Script/jquery.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+    <script>
+        $(function () { $("#header").load("header.html"); $("#footer").load("footer.html") })
+    </script>
+    <script>
+
+        function enableScrolling() { document.getElementById("scroll").style.overflow = "scroll"; document.getElementById("ImgDIV").style.visibility = "hidden"; document.getElementById("Bigimg").src = "img/Proposrd_Plan/imageproxy.gif" }
+        function bigImage(path) { document.getElementById("ImgDIV").style.visibility = "visible"; document.getElementById("ImgDIV").style.position = "absolute"; document.getElementById("ImgDIV").style.top = "0px"; document.getElementById("ImgDIV").style.overflow = "scroll"; document.getElementById("scroll").style.overflow = "hidden"; document.getElementById("Bigimg").src = path }
+    </script>
+
+</head>
+<body id="scroll">
+    <!-- ==========================On Click Big Image Start========================-->
+    <div class="show-img" id="ImgDIV" style="visibility: hidden;">
+        <table id="bigImgPosition" style="position: absolute; left: 26%; top: 0; height: 50px; width: 50px;">
+            <tr style="background-color: #00BCD4;">
+                <td>
+                    <img src="img/Proposrd_Plan/no.png" style="float: right; padding: 0px;" onclick="enableScrolling();" />
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/img/imageproxy.gif" id="Bigimg" style="border: 4px solid #00BCD4; padding: 0px; /*height: 100vh; */ width: 650px; background-color: white;" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- ==========================On Click Big Image End========================-->
+    <!--======================Heaer Strat==============================-->
+    <div id="header" class="header-size"></div>
+    <!--======================Heaer End==============================-->
+    <!--==========================  Porfolio Section============================-->
+    <div id="portfolio">
+        <div class="row">
+            <div class="col-md-12 section-title">
+                <h2>
+                    <span class="section-name">
+                        <span class="center-align">Client <span class="section-name-color">Approval</span> </span></span>
+                </h2>
+            </div>
+        </div>
+        <div class="container  wow fadeInUp page-container">
+            <div class="row about-content img-cover">
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url('img/Proposrd_Plan/c1-s.png');" href="#" onclick="bigImage('img/Proposrd_Plan/c1.png')">
+                        <div class="details">
+                            <h3>DHFL</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url(img/Proposrd_Plan/c2-s.png);" href="#" onclick="bigImage('img/Proposrd_Plan/c2.png')">
+                        <div class="details">
+                            <h3>Batliboi Ltd.</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url(img/Proposrd_Plan/c3-s.png);" href="#" onclick="bigImage('img/Proposrd_Plan/c3.png')">
+                        <div class="details">
+                            <h3>GreenEarth</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url('img/Proposrd_Plan/c4-s.png');" href="#" onclick="bigImage('img/Proposrd_Plan/c4.png')">
+                        <div class="details">
+                            <h3>Hindustan Organic Chemicals Ltd.</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url(img/Proposrd_Plan/c5-s.png);" href="#" onclick="bigImage('img/Proposrd_Plan/c5.png')">
+                        <div class="details">
+                            <h3>Uniphos Enterprises Limited</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url(img/Proposrd_Plan/c6-s.png);" href="#" onclick="bigImage('img/Proposrd_Plan/c6.png')">
+                        <div class="details">
+                            <h3>The Phoenix Mills Limited</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url(img/Proposrd_Plan/c7-s.jpg);" href="#" onclick="bigImage('img/Proposrd_Plan/c7.jpg')">
+                        <div class="details">
+                            <h3>Polychem Limited</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url(img/Proposrd_Plan/c8-s.png);" href="#" onclick="bigImage('img/Proposrd_Plan/c8.png')">
+                        <div class="details">
+                            <h3>Reliance</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url(img/Proposrd_Plan/c9-s.png);" href="#" onclick="bigImage('img/Proposrd_Plan/c9.png')">
+                        <div class="details">
+                            <h3>Sancia Global</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url(img/Proposrd_Plan/c10-s.png);" href="#" onclick="bigImage('img/Proposrd_Plan/c10.png')">
+                        <div class="details">
+                            <h3>UPL</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-item" style="background-image: url(img/Proposrd_Plan/c11-s.jpg);" href="#" onclick="bigImage('img/Proposrd_Plan/c11.jpg')">
+                        <div class="details">
+                            <h3>Varun Industries Limited</h3>
+                            <h4>Click to view Full size</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\temp\Skmailing</_PublishTargetUrl>
+    <History>True|2021-09-08T07:33:06.8215307Z;True|2021-09-03T17:33:47.5607913+05:30;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AboutUs.html">
+      <publishTime>03/01/2021 20:22:07</publishTime>
+    </File>
+    <File Include="bin/BusinessLogicLayer.dll">
+      <publishTime>03/01/2021 20:22:08</publishTime>
+    </File>
+    <File Include="bin/EnvDTE.dll">
+      <publishTime>09/02/2021 09:57:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.OLE.Interop.dll">
+      <publishTime>09/02/2021 09:57:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.Shell.Interop.dll">
+      <publishTime>09/02/2021 09:57:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.TextManager.Interop.dll">
+      <publishTime>09/02/2021 09:57:58</publishTime>
+    </File>
+    <File Include="bin/SKMailing.dll">
+      <publishTime>09/08/2021 13:03:03</publishTime>
+    </File>
+    <File Include="bin/SKMailing.pdb">
+      <publishTime>09/08/2021 13:03:03</publishTime>
+    </File>
+    <File Include="bin/SKMailing.xml">
+      <publishTime>09/08/2021 13:03:03</publishTime>
+    </File>
+    <File Include="bin/SQLite.Designer.dll">
+      <publishTime>10/27/2019 15:09:34</publishTime>
+    </File>
+    <File Include="bin/SQLite.Designer.pdb">
+      <publishTime>10/27/2019 15:09:34</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>09/02/2021 09:57:58</publishTime>
+    </File>
+    <File Include="bin/System.Data.SQLite.dll">
+      <publishTime>10/27/2019 14:59:20</publishTime>
+    </File>
+    <File Include="bin/System.Data.SQLite.dll.config">
+      <publishTime>05/15/2019 09:01:56</publishTime>
+    </File>
+    <File Include="bin/System.Data.SQLite.pdb">
+      <publishTime>10/27/2019 14:59:18</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.dll">
+      <publishTime>10/16/2013 18:29:16</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.pdb">
+      <publishTime>10/16/2013 18:29:16</publishTime>
+    </File>
+    <File Include="bin/Telerik.ReportViewer.WebForms.dll">
+      <publishTime>10/16/2013 18:29:38</publishTime>
+    </File>
+    <File Include="bin/Telerik.ReportViewer.WebForms.pdb">
+      <publishTime>10/16/2013 18:29:38</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>10/15/2013 01:09:42</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>10/15/2013 01:09:42</publishTime>
+    </File>
+    <File Include="ContactUs.aspx">
+      <publishTime>03/01/2021 20:22:07</publishTime>
+    </File>
+    <File Include="css/animate.css">
+      <publishTime>03/01/2021 20:22:08</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>03/01/2021 20:22:09</publishTime>
+    </File>
+    <File Include="css/custom.css">
+      <publishTime>03/01/2021 20:22:09</publishTime>
+    </File>
+    <File Include="css/font-awesome.min.css">
+      <publishTime>03/01/2021 20:22:09</publishTime>
+    </File>
+    <File Include="Db/Custom_SK_Mailing.db">
+      <publishTime>09/08/2021 12:50:02</publishTime>
+    </File>
+    <File Include="Doc_status.aspx">
+      <publishTime>03/01/2021 20:22:07</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>03/01/2021 20:22:09</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>03/01/2021 20:22:10</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>03/01/2021 20:22:10</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>03/01/2021 20:22:10</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>03/01/2021 20:22:10</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>03/01/2021 20:22:10</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/01/2021 20:22:10</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/01/2021 20:22:11</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/01/2021 20:22:11</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/01/2021 20:22:11</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>03/01/2021 20:22:11</publishTime>
+    </File>
+    <File Include="footer.html">
+      <publishTime>03/01/2021 20:22:07</publishTime>
+    </File>
+    <File Include="header.html">
+      <publishTime>03/01/2021 20:22:07</publishTime>
+    </File>
+    <File Include="img/app-loader.gif">
+      <publishTime>03/01/2021 20:22:11</publishTime>
+    </File>
+    <File Include="img/Banner-5.png">
+      <publishTime>03/01/2021 20:22:11</publishTime>
+    </File>
+    <File Include="img/bulk-mailing.jpg.png">
+      <publishTime>03/01/2021 20:22:12</publishTime>
+    </File>
+    <File Include="img/c8 %28Custom%29.png">
+      <publishTime>03/01/2021 20:22:12</publishTime>
+    </File>
+    <File Include="img/Courier-service.jpg">
+      <publishTime>03/01/2021 20:22:12</publishTime>
+    </File>
+    <File Include="img/dilivery-1.png">
+      <publishTime>03/01/2021 20:22:12</publishTime>
+    </File>
+    <File Include="img/dilivery.png">
+      <publishTime>03/01/2021 20:22:12</publishTime>
+    </File>
+    <File Include="img/domestic-and-international-parcel.png">
+      <publishTime>03/01/2021 20:22:12</publishTime>
+    </File>
+    <File Include="img/domestic-couriers-250x250.jpg">
+      <publishTime>03/01/2021 20:22:13</publishTime>
+    </File>
+    <File Include="img/error1.png">
+      <publishTime>03/01/2021 20:22:13</publishTime>
+    </File>
+    <File Include="img/favicon.ico">
+      <publishTime>03/01/2021 20:22:13</publishTime>
+    </File>
+    <File Include="img/FRANKING-MACHINE-IMAGE.png">
+      <publishTime>03/01/2021 20:22:13</publishTime>
+    </File>
+    <File Include="img/icon.png">
+      <publishTime>03/01/2021 20:22:13</publishTime>
+    </File>
+    <File Include="img/imageproxy.gif">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/interactive.jpg">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/interactive.png">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/Loader.gif">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/logi.png">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/logistic.png">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/logistics.png">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/machine.jpg">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/mail-box.png">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/national_air_courier_banner.jpg">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/New-postbase-mini-blue.png">
+      <publishTime>03/01/2021 20:22:14</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c1-s.png">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c1.png">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c10-s.png">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c10.png">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c11-s.jpg">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c11.jpg">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c2-s.png">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c2.png">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c3-s.png">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c3.png">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c4-s.png">
+      <publishTime>03/01/2021 20:22:16</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c4.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c5-s.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c5.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c6-s.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c6.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c7-s.jpg">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c7.jpg">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c8 %28Custom%29.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c8-s.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c8.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c9-s.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/c9.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/imageproxy.gif">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/no.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/Proposrd_Plan/Untitled-2.png">
+      <publishTime>03/01/2021 20:22:17</publishTime>
+    </File>
+    <File Include="img/register.png">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/S K Mailing Logo.png">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/S K Mailing Logo1.png">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/speed post.jpg">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/speed-post.jpg">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/statement printing logo sample.jpg">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/Untitled-1.png">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/Untitled-3.png">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/Untitled-4.png">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/Untitled-6.png">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/v-2-1.png">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/v-2.png">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/v-4.jpg">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/Visiting-Card_30 %28Custom%29.jpg">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/Visiting-Card_30.jpg">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="img/work.jpg">
+      <publishTime>03/01/2021 20:22:15</publishTime>
+    </File>
+    <File Include="index-1.html">
+      <publishTime>03/01/2021 20:22:07</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>03/01/2021 20:22:07</publishTime>
+    </File>
+    <File Include="Mail.aspx">
+      <publishTime>03/01/2021 20:22:07</publishTime>
+    </File>
+    <File Include="OurWork.html">
+      <publishTime>03/01/2021 20:22:07</publishTime>
+    </File>
+    <File Include="PODGeneration.aspx">
+      <publishTime>03/01/2021 20:22:07</publishTime>
+    </File>
+    <File Include="Script/bootstrap.min.js">
+      <publishTime>03/01/2021 20:22:18</publishTime>
+    </File>
+    <File Include="Script/HeaderActive.js">
+      <publishTime>03/01/2021 20:22:18</publishTime>
+    </File>
+    <File Include="Script/jquery.min.js">
+      <publishTime>03/01/2021 20:22:18</publishTime>
+    </File>
+    <File Include="Services.html">
+      <publishTime>03/01/2021 20:22:08</publishTime>
+    </File>
+    <File Include="Testimonial.html">
+      <publishTime>03/01/2021 20:22:08</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/03/2021 17:33:46</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

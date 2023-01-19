@@ -1,0 +1,1 @@
+﻿function yourFunction(id) { var id = document.getElementById("hidForm").value; switch (id) { case "1": alert("Work"); break; case "2": alert("aboutus"); break; case "3": $('section.page-title div div.col-sm-9').html('<h1>Document Master<small> Master</small></h1>'); break } }

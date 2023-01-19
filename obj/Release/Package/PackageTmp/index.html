@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>S.K.Mailing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==========================css============================-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="img/favicon.ico" />
+    <!--==============Call Header & Footer===========================-->
+    <script src="Script/jquery.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+
+    <script>
+        $(function () { $("#header").load("header.html"); $("#footer").load("footer.html") }); function fnSetUrl() { if ($('#txtTrackingId').val().trim() != "") { var trackingId = $('#txtTrackingId').val(); window.location = "http://localhost/SKMailing/Doc_status.aspx?trackingId=" + trackingId } }
+
+    </script>
+</head>
+<body>
+    <!-- ========================Header start=============================-->
+    <div id="header" class="header-size"></div>
+    <!-- ========================Header End=============================-->
+    <!-- ========================Banner Start=============================-->
+    <div class="banner">
+        <div class="gradient">
+            <h2 >Welcome to S.K.Mailing Services</h2>
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-5">
+                    <div class="col-sm-12 track">
+                        <h3 style="border-bottom: 3px solid white;">Track Your Item</h3>
+                        <div class="col-sm-9">
+                            <label class="col-sm-4">Tracking ID</label>
+                            <div class="col-sm-8">
+                                <input id="txtTrackingId" type="text" class="track-txtBox" />
+                            </div>
+                        </div>
+                        <div class="col-sm-3 btn-mrg">
+                            <input id="Button1" type="button" value="Search" onclick="fnSetUrl()" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========================Banner End=============================-->
+    <!-- ========================About start=============================-->
+    <section class="Yellow-BG">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-title">
+                    <h2>
+                        <span class="section-name">
+                            <span class="center-align">About <span class="section-name-color">US</span> </span></span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="about">
+                <div class="col-sm-12">
+                    <div class="col-sm-3">
+                        <img src="img/Untitled-1.png" alt="About Us" />
+                    </div>
+                    <div class="col-md-push-8">
+                        <p>
+                            <b><i>S.K. Mailing Services</i> </b>is about 16 years old organization. S.K Mailing Services with rich and diverse professional sector experience in the field of Knowledge Management & Research on vast range of sector with an experience on various applied models in Statistical Data Mining Data Warehouse with work on very small scale and with the dedication to the service oriented segment of the various clients to offer out best to all our big and small clients without discrimination.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================About End=============================-->
+    <!-- ========================Service start=============================-->
+
+    <div class="row ">
+        <div class="col-md-12 ">
+            <h2 class="section-title">
+                <span class="section-name">
+                    <span class="center-align">Our <span class="section-name-color">Services</span> </span></span>
+            </h2>
+        </div>
+    </div>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 service-item index-service">
+                    <img src="img/logistic.png" alt="Service Img" />
+                    <h4 style="font-weight: 600">Courier and Logistics</h4>
+                    <p class="service-description">We are one of the leading Courier and Logistic Service Provider, catering to the needs of Industrial and Commercial establishments.</p>
+                </div>
+                <div class="col-md-4 service-item index-service">
+                    <img src="img/domestic-and-international-parcel.png" alt="Service Img" />
+                    <h4 style="font-weight: 600">Domestic & International Couriers</h4>
+                    <p class="service-description">We Undertake Pickup & Bulk Delivery of Documents, Booklets, Samples and Parcels such as Printing Materials, Seminar Goods.</p>
+                </div>
+                <div class="col-md-4 service-item index-service">
+                    <img src="img/interactive.png" alt="Service Img" />
+                    <h4 style="font-weight: 600">Intracity Courier Services</h4>
+                    <p class="service-description">We undertake bulk corporate door-to-door deliveries of Documents, Statements, Bills.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ========================Service End=============================-->
+
+    <!-- ========================Opertaion start=============================-->
+    <section class="Yellow-BG">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-title">
+                    <h2>
+                        <span class="section-name">
+                            <span class="center-align">Mode of <span class="section-name-color">Opertaion</span> </span></span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 operation">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="img/speed-post.jpg" style="float: left" alt="Operation Modes Img" />
+                            <h4>SPEED POST</h4>
+                            <p>
+                                SpeedPost or Speed Post is the trade name or brand name for a high-speed postal service provided by several postal companies around the world
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/Untitled-6.png" style="float: left" alt="Operation Modes Img" />
+                            <h4>REGISTED LETTER</h4>
+                            <p>
+                                For all important documents we offer Registered letter.You will receive proof that your consignment has been dispatched.
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/Untitled-4.png" style="float: left" alt="Operation Modes Img" />
+                            <h4>BULK MAILING</h4>
+                            <p>
+                                Bulk mail broadly refers to mail that is mailed and processed in bulk at reduced rates.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="img/v-2.png" style="float: left; padding-top: 12px;" alt="Operation Modes Img" />
+                            <h4>FRANKING SERVICES</h4>
+                            <p>
+                                franking is the physical application and presence of postage stamps, or any other markings recognized and accepted by the postal system
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/v-4.jpg" style="float: left; padding-top: 12px;" alt="Operation Modes Img" />
+                            <h4>STATEMENT PRINTING</h4>
+                            <p>
+                                 There is no better choice than Mail Services to handle your critical document printing and mailing for the duration of your front-to-finish process. No matter the size of job, we make it simple, easy and affordable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================Opertaion End=============================-->
+
+    <!-- ========================Footer start=============================-->
+    <div id="footer"></div>
+    <!-- ========================Footer End=============================-->
+</body>
+</html>

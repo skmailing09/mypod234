@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost/PODGeneration.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>POD Generation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==========================css============================-->
+    <link href="./POD Generation_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./POD Generation_files/custom.css" rel="stylesheet">
+    <link href="./POD Generation_files/font-awesome.min.css" rel="stylesheet">
+
+    <!--==============Call Header & Footer===========================-->
+    <script src="./POD Generation_files/jquery.min.js.download"></script>
+    <script src="./POD Generation_files/bootstrap.min.js.download"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    
+    <script>
+        function checkfile(sender) {
+            debugger;
+            var validExts = new Array(".xlsx", ".xls");
+            var fileExt = sender.value;
+            fileExt = fileExt.substring(fileExt.lastIndexOf('.'));
+            if (validExts.indexOf(fileExt) < 0) {
+                alert("Invalid file selected, valid files are of " + validExts.toString() + " types.");
+                return false;
+            }
+            else return true;
+        }
+    </script>
+     <script>
+         function fnViewReport() {
+             debugger;
+             oWnd = $find("ReportViewer1")
+             setTimeout(oWnd.show(), 500);
+         }
+    </script>
+</head>
+<body>
+   
+    
+    <div id="header" class="header-size">
+
+
+    <title></title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==========================css============================-->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/ionicons.min.css" rel="stylesheet" />
+    
+   
+    <script src="Script/bootstrap.min.js"></script>-->
+    <script src="./POD Generation_files/jquery.min.js.download"></script>
+    <!--    ========================Active menu==================================-->
+    <script type="text/javascript">
+        pageLoad(); function pageLoad() {
+            if (window.location.href.indexOf("ContactUs.aspx") > -1) { document.getElementById("contact").className = "active" }
+            else if (window.location.href.indexOf("AboutUs.html") > -1) { document.getElementById("aboutus").className = "active" }
+            else if (window.location.href.indexOf("OurWork.html") > -1) { document.getElementById("ourwork").className = "active" }
+            else if (window.location.href.indexOf("OurWork.html") > -1) { document.getElementById("ourwork").className = "active" }
+            else if (window.location.href.indexOf("Services.html") > -1) { document.getElementById("service").className = "active" }
+            else if (window.location.href.indexOf("PODGeneration.aspx") > -1) { document.getElementById("pod").className = "active" }
+            else if (window.location.href.indexOf("Testimonial.html") > -1) { document.getElementById("testimonial").className = "active" }
+            else { document.getElementById("index").className = "active" }
+        }
+    </script>
+    <style>
+        .active{border-radius:5px;color:#00BCD4!important;background-color:black;margin:0 5px}
+        
+    </style>
+
+
+    <div id="header" class="affix-top" data-spy="affix" data-offset-top="197">
+        <header>
+            <div class="row header">
+                <div class="col-sm-4 header-img">
+                    <img src="./POD Generation_files/S K Mailing Logo.png" height="60px" width="60px" alt="Logo">
+                    <!--<img src="img/Visiting-Card_30.jpg"  />-->
+                    <h1 style="font-family: fantasy; color:#2c2a90;">S.K. Mailing Services</h1>
+                </div>
+                <div class="col-sm-8">
+                    <nav class="navbar">
+                        <!-------------------- Responsive Menu---------------->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                     
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+</div>
+    
+
+    
+    <form method="post" action="http://localhost/PODGeneration.aspx" id="form1" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="8y8EvNtG8p+l0z3XdO7FI+iU941vwckuETxSvYCVcgkZXmZBwCQmtez7RW8M3kkk2CwQBQu7jW7kIrj8pMq4IRyDHXqUsOAo518Pn9od3VDSnpiiDW2gjWjV4QHakFgIW2MhPVxqwC/7owiwe1lIUnf7eOyUgsXYLDq+WakGaoefxR/ZFjP8cHrWEaON9Ee7Mu1uy+59h6VA3qHMgYInx+pzKN505Tiny7/X0bQVuYMXCN9biKJuc9k72PoN9ZYFAc/o8DKAIp6mYVJSX6FTiLAUD60aLkLRwu/iWr5egT/rUw51gEA3LwrOXXIw5LgBFbW4efKPewnJokE4E/PdQMj+i9fPazEEusFaHsidPwpwsdwXCCa6uQVRwtJmNwqH8zcj62oQsN4VtAAoXH6+jgpZsxrJlRJ52Qeyht8UCpWVOh64eZSjzeI4kMb5Yq+fPFt4hNORbHnfWsyLeB34r0edbgpYuzPiyG1h5gAHoRZPmUrD7TZDamKfrTeSRQKQU5dHQiPJQAe3lL/yvYbwUqiQz3xJlBHZqMTsDTyUtI3FTMr4fnjPeCvDy0vNli6zjXFJPbDiwi9rem4+uJJX8beFmcl3wu8jq4rOH1/JtPHHjBlYtynjl/utN7nu/nWz8FLspKtClshAKB6X9dZ0BhytOkN8q7qSIadJL1XWIKEAaW/tNjd2e0tdFX1w/NrHDzNYIP4z5vgRIKC8/r0LNA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./POD Generation_files/WebResource.axd" type="text/javascript"></script>
+
+<link class="Telerik_stylesheet" type="text/css" rel="stylesheet" href="./POD Generation_files/WebResource(1).axd"><link class="Telerik_stylesheet" type="text/css" rel="stylesheet" href="./POD Generation_files/WebResource(2).axd">
+<script src="./POD Generation_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./POD Generation_files/ScriptResource(1).axd" type="text/javascript"></script>
+<script src="./POD Generation_files/ScriptResource(2).axd" type="text/javascript"></script>
+<script src="./POD Generation_files/ScriptResource(3).axd" type="text/javascript"></script>
+<script src="./POD Generation_files/ScriptResource(4).axd" type="text/javascript"></script>
+<script src="./POD Generation_files/ScriptResource(5).axd" type="text/javascript"></script>
+<script src="./POD Generation_files/ScriptResource(6).axd" type="text/javascript"></script>
+<script src="./POD Generation_files/ScriptResource(7).axd" type="text/javascript"></script>
+<script src="./POD Generation_files/ScriptResource(8).axd" type="text/javascript"></script>
+<script src="./POD Generation_files/ScriptResource(9).axd" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5E38306">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ch35upGgDsPymiX/NhwsrSUfvmlJZJZaP6sLZtJPOXrenx0rHUcaERDnFX1iWJqgusdBtvqbJmp2TW3XyipLZ391kS7pdblMZ2/7+9PVbN5OLcajrVnSfh/CCNM0m/C9">
+</div>
+        <section class="section Yellow-BG">
+            <div class="row">
+                <div class="col-md-12 section-title">
+                    <h2>
+                        <span class="section-name">
+                            <span class="center-align">POD <span class="section-name-color">Status</span> </span></span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 pod-combo">
+                    <div id="cmbcompany" class="RadComboBox RadComboBox_Default" style="width:160px;white-space:normal;">
+	<!-- 2013.3.1015.45 --><table summary="combobox" style="border-width:0;border-collapse:collapse;width:100%">
+		<tbody><tr class="rcbReadOnly">
+			<td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input name="cmbcompany" type="text" class="rcbInput radPreventDecorate" id="cmbcompany_Input" value="S K MAILING SERVICES" readonly="readonly"></td><td class="rcbArrowCell rcbArrowCellRight"><a id="cmbcompany_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+		</tr>
+	</tbody></table><div class="rcbSlide" style="z-index:6000;"><div id="cmbcompany_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Default " style="display:none;"><div class="rcbScroll rcbWidth" style="width:100%;"><ul class="rcbList" style="list-style:none;margin:0;padding:0;zoom:1;"><li class="rcbItem">S K MAILING SERVICES</li><li class="rcbItem">S K EXPRESS</li></ul></div></div></div><input id="cmbcompany_ClientState" name="cmbcompany_ClientState" type="hidden">
+</div>
+                </div>
+            </div>
+            <div class="row main-container" id="container">
+                <div class=" col-sm-12">
+                    <div class="form">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="file" name="rd_POD" id="rd_POD" class="btn-right" onchange="checkfile(this);" style="width:138px;">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="submit" name="btnupload" value="Upload File" id="btnupload">
+                                    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', [], [], [], 90, '');
+//]]>
+</script>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+alert('database is locked
+database is locked');
+WebForm_InitCallback();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_height":0,"_skin":"Default","_text":"S K MAILING SERVICES","_uniqueId":"cmbcompany","_value":"S K MAILING SERVICES","clientStateFieldID":"cmbcompany_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"value":"S K MAILING SERVICES","selected":true},{"value":"S K EXPRESS"}],"localization":"{\"AllItemsCheckedString\":\"All items checked\",\"ItemsCheckedString\":\"items checked\",\"CheckAllString\":\"Check All\"}","selectedIndex":0}, null, null, $get("cmbcompany"));
+});
+//]]>
+</script>
+</form>
+    
+
+    
+    <div id="footer">
+
+
+    <title></title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==========================css============================-->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />-->
+
+
+    <div id="footer">
+        <footer>
+            <div class="footer-top">
+                <div class="container container-margin">
+                    <h2 style="color: white">S.K. Mailing Services</h2>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="footer-heading-line"></div>
+                            <h4>Get in Touch</h4>
+                            <ul>
+                                <li><i class="fa fa-phone" style="color: #00BCD4"></i>(022) 2352-2272</li>
+                                <li><i class="fa fa-mobile" style="color: #00BCD4"></i>+91 9321411222</li>
+                                 <li><i class="fa fa-mobile" style="color: #00BCD4"></i>+91 9821111222</li>
+                                <li><i class="fa fa-envelope" style="color: #00BCD4"></i>skmailing09@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>Head Office</h4>
+                            <address>
+                             A-2 , Om Sai shraddha<br>
+                                co-op hsg society ltd,<br>
+                                veer sawarkar nagar ,<br>
+                                near asalpha metro station,<br>
+                                sakinaka mumbai -400072
+                            </address>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>Office</h4>
+                            <address>
+                                B2D Sinhgad Building,<br>
+                               102,1<small>st</small>Floor,M P Mill Compound,<br>
+                                Nav-Maharashtra Nagar,<br>
+                                Tardeo,Mumbai-400034
+                            </address>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4 style="padding-left: 13px;">Visit Us</h4>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li><a href="http://localhost/AboutUs.html">About Us</a></li>
+                                    <li><a href="http://localhost/OurWork.html">Our Work</a></li>
+                                    <li><a href="http://localhost/Services.html">Services</a></li>
+                                    <li><a href="http://localhost/Testimonial.html">Client Approvals</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li><a href="http://localhost/Mail.aspx">Send Mail</a></li>
+                                    <li><a href="http://localhost/PODGeneration.aspx">POD</a></li>
+                                    <li><a href="http://localhost/ContactUs.aspx">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container container-margin">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Copyright © 2017 <a href="http://www.skexpress.in/" rel="noreferrer">Skmailing Services</a> All Rights Reserved.
+                            </p>
+                            <p id="copyright">
+                                Designed by <a href="https://www.shreay.in/" target="_blank" rel="noreferrer">Shreay Technology Solutions </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</div>
+    
+
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./POD Generation_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"></div></body></html>
